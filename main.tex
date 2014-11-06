@@ -1,0 +1,105 @@
+
+\documentclass[12pt, a4paper, oneside]{Thesis}
+
+\graphicspath{{figures/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.jpg}
+\usepackage[square, numbers, comma, sort&compress]{natbib} % References
+\title{\ttitle} 
+\begin{document}
+\frontmatter % Page numbering style i, ii, iii, iv...for the pre-content pages
+\setstretch{1.3} % Line spacing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+\pagestyle{fancy}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Put lines on the title page
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfauthor={\authornames}}
+
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+\textsc{\LARGE The University of Edinburgh}\\[1.5cm]
+\HRule \\[0.4cm] % Horizontal line
+
+\textsc{\huge \bfseries \thesistitle }\\[0.4cm]
+\HRule \\[0.5cm] % Horizontal line
+\textsc{\Large \deptname}\\[0.5cm]
+
+\large \today \\[1cm]
+
+\vspace
+
+\\[1cm]
+
+\includegraphics[width=6cm]{logo}
+\vfill
+\end{center}
+
+\end{titlepage}
+
+
+%-------------------------------------------------------------------------------
+% ACKNOWLEDGEMENTS
+%-------------------------------------------------------------------------------
+
+\acknowledgements{\addtocontents{toc}{\vspace{1em}}
+A bunch of people
+}
+
+\clearpage % Start a new page
+
+%-------------------------------------------------------------------------------
+% CONTENTS
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+
+\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+\clearpage % Start a new page
+
+%-------------------------------------------------------------------------------
+% CONTENT CHAPTERS
+%-------------------------------------------------------------------------------
+\mainmatter % Numeric (1,2,3...) page numbering
+
+\pagestyle{fancy}
+
+\input{sections/anatomy_of_the_eye}
+
+
+%-------------------------------------------------------------------------------
+% CONTENT - APPENDICES
+%-------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}}
+
+%\appendix
+
+%\input{Appendices/AppendixA}
+
+
+\addtocontents{toc}{\vspace{2em}}
+
+\backmatter
+
+%-------------------------------------------------------------------------------
+% BIBLIOGRAPHY
+%-------------------------------------------------------------------------------
+
+\label{Bibliography}
+
+\lhead{\emph{Bibliography}}
+
+\bibliographystyle{unsrt}
+
+\bibliography{bibliography}
+
+\end{document}
