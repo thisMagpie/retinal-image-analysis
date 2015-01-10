@@ -5,6 +5,9 @@
 \usepackage[square, numbers, comma, sort&compress]{natbib}
 \usepackage{titlesec}
 
+\let\oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{
+  \oldincludegraphics[width=8cm]{#2}}
 
 \titleformat{\chapter}[display]
   {\normalfont\huge\bfseries}{}{0pt}{\huge}
@@ -37,17 +40,27 @@
 \begin{center}
 
 \textsc{\LARGE The University of Edinburgh}\\[1.5cm]
-\HRule \\[0.4cm] % Horizontal line
+\HRule \\[0.8cm] % Horizontal line
 
-\textsc{\huge \bfseries \thesistitle }\\[0.4cm]
+\textsc{\huge \bfseries \ttitle }\\[0.2cm]
 \HRule \\[0.5cm] % Horizontal line
-\textsc{\Large \deptname}\\[0.5cm]
+\textsc{\Large \deptname}\\[1.0cm]
 
 \large \today \\[1cm]
 
-\includegraphics[width=6cm]{logo}
-\vfill
+\includegraphics[width=2.0cm]{logo}\\[1cm]
 \end{center}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\bf{Authors: \\
+Magdalen Berns \\
+(rest TBC)}
+\end{flushleft}
+\end{minipage}\\[0.5cm]
+
+
+
 
 \end{titlepage}
 
@@ -61,7 +74,7 @@ A bunch of people
 }
 
 \clearpage % Start a new page
-
+ 
 %-------------------------------------------------------------------------------
 % CONTENTS
 %-------------------------------------------------------------------------------
@@ -76,11 +89,8 @@ A bunch of people
 % CONTENT CHAPTERS
 %-------------------------------------------------------------------------------
 \mainmatter % Numeric (1,2,3...) page numbering
-
 \pagestyle{fancy}
-
 \input{sections/anatomy_of_the_eye}
-
 
 %-------------------------------------------------------------------------------
 % CONTENT - APPENDICES
@@ -91,7 +101,6 @@ A bunch of people
 %\appendix
 
 %\input{Appendices/AppendixA}
-
 
 \addtocontents{toc}{\vspace{2em}}
 

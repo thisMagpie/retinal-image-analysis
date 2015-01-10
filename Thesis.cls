@@ -111,7 +111,7 @@
 \setcounter{bottomnumber}{9}
 \setcounter{totalnumber}{20}
 \setcounter{dbltopnumber}{9}
-\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage{booktabs}
 \usepackage{rotating}
@@ -167,7 +167,7 @@
 \thesistitle{Retinal Imaging and Image Analysis}
 \supervisor{Prof. Joe \textsc{Blogs}}
 \degree{Physics, innit?}
-\authors{Lily C. \textsc{Delimata}}
+\authors{Magdalen}
 
 %-------------------------------------------------   
 \university{\texorpdfstring{\href{http://www.ed.ac.uk} % Your university's URL
