@@ -94,7 +94,8 @@
 \newtheorem{remark}[theorem]{Remark}
 \usepackage[centerlast,small,sc]{caption}
 \setlength{\captionmargin}{20pt}
-\newcommand{\fref}[1]{Figure~\ref{#1}}
+\newcommand{\fref}[1]{figure~\ref{#1}}
+\newcommand{\Fref}[1]{Figure~\ref{#1}}
 \newcommand{\tref}[1]{Table~\ref{#1}}
 \newcommand{\Eref}[1]{Equation~\ref{#1}}
 \newcommand{\eref}[1]{equation~\ref{#1}}
