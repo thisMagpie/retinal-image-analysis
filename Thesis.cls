@@ -119,6 +119,7 @@
 \usepackage[section]{placeins}
 \usepackage{textcomp}
 \usepackage{listings}
+\usepackage{url}
 \usepackage[version=3]{mhchem}
 \usepackage{todonotes}
 \usepackage{color}
@@ -166,7 +167,7 @@
 %-------------------------------------------------------------------------------
 
 \thesistitle{Retinal Imaging and Image Analysis}
-\supervisor{Prof. Joe \textsc{Blogs}}
+\supervisor{Dr. William Hossack \textsc{Blogs}}
 \degree{Physics, innit?}
 \authors{Magdalen}
 
