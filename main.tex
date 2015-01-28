@@ -5,10 +5,6 @@
 \usepackage[square, numbers, comma, sort,super]{natbib}
 \usepackage{titlesec}
 
-\let\oldincludegraphics\includegraphics
-\renewcommand{\includegraphics}[2][]{
-  \oldincludegraphics[width=8cm]{#2}}
-
 \titleformat{\chapter}[display]
   {\normalfont\huge\bfseries}{}{0pt}{\huge}
 \titleformat{name=\chapter,numberless}[display]
@@ -46,8 +42,7 @@
 
 \large \today \\[1cm]
 
-\includegraphics[width=2.0cm]{logo}\\[1cm]
-
+\includegraphics[width=4.0cm]{logo}\\[1cm]
 
 \begin{minipage}{0.2\textwidth}
 
