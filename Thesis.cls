@@ -118,6 +118,8 @@
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage[section]{placeins}
+\usepackage[square, numbers, comma, sort,super]{natbib}
+\usepackage{titlesec}
 \usepackage{textcomp}
 \usepackage{listings}
 \usepackage{url}
