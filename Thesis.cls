@@ -99,7 +99,8 @@
 \newcommand{\tref}[1]{Table~\ref{#1}}
 \newcommand{\Eref}[1]{Equation~\ref{#1}}
 \newcommand{\eref}[1]{equation~\ref{#1}}
-\newcommand{\cref}[1]{Chapter~\ref{#1}}
+\newcommand{\cref}[1]{chapter~\ref{#1}}
+\newcommand{\Cref}[1]{Chapter~\ref{#1}}
 \newcommand{\sref}[1]{Section~\ref{#1}}
 \newcommand{\aref}[1]{Appendix~\ref{#1}}
 \renewcommand{\topfraction}{0.85}
