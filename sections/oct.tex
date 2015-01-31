@@ -69,9 +69,9 @@ than visible light, typically 800–1400nm wavelengths in the near infrared,
 are necessary as they penetrate deeper into the retinal tissue layers.\cite{mbib_4,mbib_7}
 The resolution of the generated images is limited by the progress of SLD
 technology, for example, early systems used SLDs emitting wavelengths around
-820 nm, limiting the axial resolution to 11 mm in retinal tissues and 15 mm
+820 nm, limiting the axial resolution to 11 $\mu m$ in retinal tissues and 15 $\mu m$
 in air. \cite{mbib_6}  Today, the CirrusTM HD-OCT device uses SLDs with wavelengths
-of approximately 840 nm, and achieve a resolution of 5 mm in retinal tissue.\cite{mbib_7}
+of approximately 840 nm, and achieve a resolution of 5 $\mu m$ in retinal tissue.\cite{mbib_7}
 
 Inside the interferometer, the light from the SLD is split using a beam splitter.
 Other splitting methods such as a 50/50 fibre coupler can be used, but the beam
@@ -179,9 +179,10 @@ The main difference between Fourier-domain and Spectral-domain OCT is that in
 FD-OCT the SLD’s light is rapidly modulated over its centre wavelength providing
 another tag to the light; whereas in SD-OCT a broadband light source is used,
 and the signal from the interferometer is spectrally decomposed using a diffraction
-grating and a CMOS (Complimentary Metal Oxide Semiconductor) or CCD (Charged Coupled Device) linear sensor.\cite{mbib_4}
-Thus a spectrometer is used to detect the spectrum created by the backscatter to
-produce an image of the retina.  Once the signal is obtained a Fourier transform
+grating and a CMOS (Complimentary Metal Oxide Semiconductor) or CCD
+Charge Coupled Device) linear sensor.\cite{mbib_4}
+Thus a spectrometer is used to detect the spectrum created by the backscatter
+to produce an image of the retina.  Once the signal is obtained a Fourier transform
 (a mathematical procedure which extracts the frequency spectrum of a signal) is
 applied to the spectral signal to determine the depth of all resultant scatters from
 the tissues at the x and y coordinates.\cite{mbib_4,mbib_9} SD-OCT technology
@@ -327,17 +328,48 @@ Choroidal neovascularization is another blinding disease clinically known as the
 \end{figure}
 
 \section{Further Improvements}
-The current state of OCT technology can already achieve much better images 
-of the retina than the
-original technology developed in 1991.  Previously unachievable
-capabilities of these machines are now clinically standard practice in the
-medical diagnosis of several retinal diseases.  Although these improvements
-are highly effective in improving the technology for retinal imaging, further
-research can be done to obtain images of deeper structures within the eye such
-as the choroidal vessels, which are a structure in the optic nerve and
-relevant to the study of damage caused by glaucoma. \cite{mbib_4}  Current
-commercially available
-machines use wavelengths around 840$\mu m$ and only allow medical professionals
-to image the retina.  Longer wavelengths around 1000-1300 $\mu m$ would enable
-the OCT imaging light to penetrate deeper into the tissue and image deeper
-structures such as choroidal vessels. \cite{mbib_4}
+The current state of OCT technology can already achieve much better images
+ of the retina than the original technology developed in 1991.  Previously 
+unachievable capabilities of these machines are now clinically standard practice 
+in the medical diagnosis of several retinal diseases.  Although these
+ improvements are highly effective in improving the technology for retinal 
+imaging, further research can be done to obtain images of deeper structures 
+within the eye such as the choroidal vessels, which are a structure in the optic 
+nerve and relevant to the study of damage caused by glaucoma. \cite{mbib_4} 
+Current commercially available machines use wavelengths around 840 nm
+and only allow medical professionals to image the retina.  Longer wavelengths 
+around 1000-1300 nm would enable the OCT imaging light to penetrate deeper 
+into the tissue and image deeper structures such as choroidal vessels. 
+\cite{mbib_4}  However, at these increased wavelengths, the limits of CCD 
+(Charge Coupled Device) technologies are encountered.  These detectors 
+were briefly mentioned when discussing the differences between Spectral 
+and Fourier Domain methodologies, but the actual technology was not 
+described. 
+ 
+CCDs are highly sensitive photon detectors, conventionally made using 
+silicon, which are divided into a large number of light-sensitive pixels.  These 
+pixels are used to build up an image of the retina by converting the light 
+incident on the silicon detector into one or more electrons that are collected 
+as seen in \fref{fig:CCD} and stored in the potential well created by the incoming 
+photons. The number of electrons displaced is directly proportional to the 
+intensity of the incident light at each pixel.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{figures/CCDSchem}
+\caption{Illustration of the functionality of a CCD.  Incoming radiation is incident on the CCD and one or more electrons are displaced and collected to determine the intensity of the light at each pixel. \cite{poo1} }
+\label{fig:CCD}
+\end{figure}
+
+CCDs are sensitive to a wide wavelength range ranging from 400 -1050 nm 
+with a peak sensitivity around 700 nm. The lack of sensitivity at long wavelengths
+has affected the widespread adoption of these devices. \cite{poo2} 
+ 
+If the amount of energy of the incoming photon is too small, the detectors are 
+not able to register the incident light. This is due the physical principle that by
+increasing the wavelength of the imaging light, the energy of the photon hitting
+the CCD detector decreases, and if the energy is not large enough for the
+detector to register, the silicon CCD is no longer the appropriate photodetector. 
+In a long wavelength OCT cheap silicon detectors have been replaced by 
+InGaAs detectors, which are sensitive between 800-1700 nm.
+
