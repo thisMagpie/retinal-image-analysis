@@ -2,6 +2,8 @@
 
 \graphicspath{{figures/}}
 \DeclareGraphicsExtensions{.pdf,.jpeg,.png,.jpg}
+\usepackage[square, numbers, comma, sort,super]{natbib}
+\usepackage{titlesec}
 
 \titleformat{\chapter}[display]
   {\normalfont\huge\bfseries}{}{0pt}{\huge}
@@ -34,7 +36,7 @@
 \textsc{\LARGE The University of Edinburgh}\\[1.5cm]
 \HRule \\[0.8cm] % Horizontal line
 
-\textsc{\huge \bfseries \ttitle }\\[0.2cm]
+\textsc{\huge \ttitle }\\[0.2cm]
 \HRule \\[0.5cm] % Horizontal line
 \textsc{\Large \deptname}\\[1.0cm]
 
@@ -77,9 +79,9 @@ A bunch of people
 \mainmatter % Numeric (1,2,3...) page numbering
 \pagestyle{fancy}
 \input{sections/anatomy_of_the_eye}
-\input{sections/history}
-\input{sections/fundus_photography}
-\input{sections/oct}
+%\input{sections/history}
+%\input{sections/fundus_photography}
+%\input{sections/oct}
 \input{sections/future_research}
 
 %-------------------------------------------------------------------------------

@@ -118,10 +118,9 @@
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage[section]{placeins}
-\usepackage[square, numbers, comma, sort,super]{natbib}
-\usepackage{titlesec}
 \usepackage{textcomp}
 \usepackage{listings}
+\usepackage{csquotes}
 \usepackage{url}
 \usepackage[version=3]{mhchem}
 \usepackage{todonotes}
