@@ -7,9 +7,13 @@
 \label{future_research}
 \lhead{\emph{Future Research in Retinal Imaging}}
 
+The current technology for retinal imaging is rapidly developing.
+With technological advances comes the potential for better
+understanding diseases associated with retina, as well as …
+Looking ahead this section will briefly introduce possible future
+research areas, concerns and uses of retinal imaging.
 
 \section {Global Accessibility to Retinal Imaging}
-
 
 Fundus cameras, confocal scanning laser ophthalmoscopes and OCTs are
 highly advanced retinal imaging machines which are commonplace in the
@@ -35,10 +39,12 @@ view, with a resolution of 2652×2448 pixels. \cite{medscape}
 
 \begin{figure}[htbp]
 \centering
- \includegraphics{figures/ocular}
+\includegraphics{figures/ocular}
 \caption{A schematic figure of the Ocular CellScope \cite{medscape} }
 \label{fig:ocular}
 \end{figure}
+
+
 
 The ocular cellscope serves a more general clinical need than the aforementioned
 devices, where the goal is to diagnose the main causes of serious retinal pathology,
@@ -55,8 +61,8 @@ risk of blindness by 50\%. \cite{abramoff2010automated}
 
 \begin{figure}[htbp]
 \centering
- \includegraphics{figures/ocularDR}
-\caption{A sample image of a patient with diabetic retinopathy using the Ocular CellScope}
+\includegraphics{figures/ocularDR}
+\caption{A sample image of a patient with diabetic retinopathy using the Ocular CellScope \cite{medscape}}
 \label{fig:odr}
 \end{figure}
 
@@ -67,7 +73,7 @@ development of automated retinal screening programmes go a long way in solving t
 where images can be taken and then immediately sent to specialists for analysis. The
 device has already been tested in Thailand, where the images were taken by untrained
 personnel and then sent via mobile technology to a secure server, where ophthalmologists
-have examined the images and returned a diagnosis.
+have examined the images and returned a diagnosis. 
 
 The development of automated early detection of diabetic retinopathy algorithms have
 been a significant area of research in recent years. Computer aided diagnosis(CAD)
@@ -81,7 +87,7 @@ by the software, this image would then be referred to a specialist for considera
 
 \begin{figure}[htbp]
 \centering
- \includegraphics{figures/autodr}
+\includegraphics{figures/autodr}
 \caption{An image illustrating the ability of the algorithm to detect fatty fluid leaks
 and haemorrhages in a patient suffering from diabetic retinopathy. The image on the left
 is the standard colour fundus. The image on the right demonstrates the detection of
@@ -106,10 +112,11 @@ the biological ageing process.\cite{behar_cohen_2011}.
 
 \begin{figure}[htbp]
 \centering
- \includegraphics{figures/bluehazard}
+\includegraphics{figures/bluehazard}
 \caption{A sample image of a patient with diabetic retinopathy using the Ocular CellScope}
 \label{fig:bluehaz}
 \end{figure}
+
 
 Normal white light, as well as sunlight, contains a wide distribution of "all" colour
 wavelengths. \Fref{fig:bluehazard} shows how the wavelengths of a white-light LED and a
@@ -122,7 +129,7 @@ alone, as can be seen in \fref{fig:wl}.
 
 \begin{figure}[htbp]
 \centering
- \includegraphics{figures/wavelength}
+\includegraphics{figures/wavelength}
 \caption{A table showing how light of different wavelengths are handled inside the eye.}
 \label{fig:wl}
 \end{figure}
@@ -139,17 +146,17 @@ about the biological effects of blue-light and thus maintaining the study of the
 \section{Multimodality}
 
 Multimodality imaging is the simultaneous capturing of retinal images in the various
-aforementioned modalities, blending the various fundus modes with an OCT image. This
-allows for direct comparison of pathology across the various modes and thus presents
-the ultimate diagnostic tool for ophthalmologists. For image information from multiple
-modalities to be usable in a mutual context, images must be registered independently.
-This is achieved in practice by individually capturing each image over a very short
-period of time and then concatenating these descriptions to form one multimodal image,
-as shown in \fref{fig:mt}. 
+aforementioned modalities, blending the various fundus modes with an OCT image.
+\cite{abramoff2010retinal} This allows for direct comparison of pathology across
+the various modes and thus presents the ultimate diagnostic tool for ophthalmologists.
+For image information from multiple modalities to be usable in a mutual context,
+images must be registered independently. This is achieved in practice by individually
+capturing each image over a very short period of time and then concatenating these
+descriptions to form one multimodal image, as shown in \fref{fig:mt}.
 
 \begin{figure}[htbp]
 \centering
- \includegraphics{figures/multitwo}
+\includegraphics{figures/multitwo}
 \caption{Multimodal image of a patient with macular leakage. 1A is a colour fundus
 photograph, where the arrow indicates the graying of the tissue. 1B is a fundus
 autofluorescence image with a small increase in macular autofluorescence. 1C and 1D
@@ -172,21 +179,77 @@ each modality, an example of this is shown in \fref{fig:multi}.
 
 \begin{figure}[htbp]
 \centering
- \includegraphics{figures/multi}
+\includegraphics{figures/multi}
 \caption{Combination of cSLO retinal image and OCT image in a patient suffering from
 dry AMD. The images both illustrate the accumulation of drusen in Bruch’s membrane.}
 \label{fig:multi}
 \end{figure}
 
-\section{Security}
+\section{Adaptive Optics and High Resolution Imaging}
 
+
+As was mentioned earlier, one of the physical limitations in retinal imaging is
+the optical resolution as a result of diffraction. This limitation affects both
+typical systems, such as the Topcon TRC-NW8F, and more advanced systems, such as
+the Optos California and the OCT. This fundamental resolution limit couples with
+the blurring caused by aberration in the optical system to give maximum optical
+resolutions around 20 microns for devices at normal operating distance from the
+eye (10-40mm). Recent studies \cite{barber2003new} have suggested that diseases
+initially thought to be contained to the vascular network, for instance diabetic
+retinopathy, actually manifest themselves in the cellular makeup of the eye. The
+current instruments are unable to image cells individually as the foveal cones
+have a diameter between 3-5 microns; hence diagnosis of disease based on cellular
+pathology is impossible. The diffraction limit of resolution for an imaging system
+at 10mm from the eye is between 2-5 microns, dependent on the visual acuity of the
+patient. Hence high-resolution images of ocular cells are practically obtainable
+if aberration is reduced to zero.
+ 
+Adaptive optics is a method of removing all aberration from an optical system
+through the use of a deformable mirror, which transforms and reverses the wavefront
+distortions caused by system imperfections. This technology, which was originally
+developed for use in telescopes, has recently been applied to retinal imaging
+devices with great success. \cite{zhang2006high} With this new capability
+practitioners are able to successfully image the retinal cones, opening up a vast
+new area of research in pathology at a cellular level. \Fref{fig:ao} illustrates
+AO with a fundus camera.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{figures/ao}
+\caption{A comparison of standard resolution fundus images with the capabilities of high resolution adaptive optics imaging}
+\label{fig:ao}
+\end{figure}
+
+\section{Two-Photon Retinal Microscopy}
+
+Having introduced the issue of retinal damage as a result of blue-light
+absorption and the blue-light reliant imaging technique of fundus autofluorescence
+(FAF), the reader may have deduced a conundrum facing ophthalmologists. Currently
+practitioners face the issue of causing harm to the patient in order to retrieve
+valuable diagnostic information from FAF imaging. A novel method has been proposed
+to avoid this problem altogether; two-photon retinal microscopy.
+
+Recently it has been shown that fluorescent retinal tissue exhibits a non-linear
+response to incident radiation. \cite{denk1990two} There exists a probability of
+two-photon absorption by the organic material which is proportional to the square
+of the intensity of the light beam. With this method a normally blue absorbing
+tissue will instead reach its excited state by absorbing two photons of double
+blue wavelength. This means that harmless radiation wavelengths can be used to
+observe fluorescent properties of tissue, if the correct powers of beam are
+achieved. By using a high intensity(50mW) and short pulse (100fs) LASER beam the
+desired properties of the incident radiation can be achieved without causing harm
+to the retina. Further development in this field is expected, with recent studies
+linking information obtained through this method with symptoms of AMD and other
+retinal defects.\cite{palczewska2010noninvasive,palczewska2014noninvasive}
+
+\section{Security}
 
 The unique retinal vascular pattern has many applications, most notably in personal
 security and protection. A security system can be designed to recognise the unique
 biometrics of the eye(iris and retina) and grant access based on matching information.
 The pattern of the retina, which maps the locations of veins, arteries, the macula
-and the optic nerve in the eye, has a much more complex pattern than the normally used fingerprint or iris.\cite{ortega_2009}
-
+and the optic nerve in the eye, has a much more complex pattern than the normally
+used fingerprint or iris.\cite{ortega_2009}
 
 The retinal images are then analysed using complex computer algorithms, converted to
 computer code and then saved in a database. Presently one of the most commonly used
@@ -200,7 +263,7 @@ best-bin-first search algorithm, that begins with a keypoint and moves outward f
 
 \begin{figure}[htbp]
 \centering
- \includegraphics{figures/sift}
+\includegraphics{figures/sift}
 \caption{An example of Scale Invariant Feature Transform in retina matching}
 \label{fig:sift}
 \end{figure}
