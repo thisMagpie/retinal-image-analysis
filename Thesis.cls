@@ -113,11 +113,13 @@
 \setcounter{bottomnumber}{9}
 \setcounter{totalnumber}{20}
 \setcounter{dbltopnumber}{9}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage{booktabs}
 \usepackage{rotating}
 \usepackage[section]{placeins}
+\usepackage[all]{xy}            % creating figures within latex
 \usepackage{textcomp}
 \usepackage{listings}
 \usepackage{csquotes}
