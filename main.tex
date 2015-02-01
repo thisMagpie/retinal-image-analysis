@@ -1,9 +1,78 @@
 \documentclass[11pt, a4paper, oneside]{Thesis}
-
 \graphicspath{{figures/}}
 \DeclareGraphicsExtensions{.pdf,.jpeg,.png,.jpg}
 \usepackage[square, numbers, comma, sort,super]{natbib}
 \usepackage{titlesec}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[nopostdot,acronym,toc,section,xindy]{glossaries}
+
+ 
+\makenoidxglossaries
+ 
+\newglossaryentry{aperture}
+{
+        name=Aperture,
+        description={An opening through which light can travel.}
+}
+
+\newglossaryentry{atrophy}
+{
+        name=Atrophy,
+        description={A partial or complete wasting of a part of the body.}
+}
+
+\newglossaryentry{cornea}
+{
+        name=Cornea,
+        description={The transparent front part of the eye covering the pupil, iris and anterior chamber.}
+}
+
+\newglossaryentry{bipolar_cell}
+{
+        name=Bipolar Cell,
+        description={Part of the retina, bipolar cells are located between the photoreceptors and ganglion cells. They act to transmit signals between the two}
+}
+
+\newglossaryentry{intraocular}
+{
+        name=Intraocular,
+        description={Inside of the eye.}
+}
+
+\newglossaryentry{macular}
+{
+        name=Macular,
+        description={ An oval-shaped pigmented area near the center of the retina.}
+}
+
+\newglossaryentry{macular_edema}
+{
+        name=Macular Edema,
+        description={An accumulation of fluid within the retina at the macular area, causing the macula to thicken and swell.}
+}
+
+\newglossaryentry{retina}
+{
+        name=Retina,
+        description={A light-sensitive layer of tissue that lines the inner surface of the eye.
+        The optics of the eye create an image on the retina, serving much the same function
+        as the film in a camera.}
+}
+
+\newglossaryentry{retinopathy}
+{
+        name=Retinopathy,
+        description={Persistent or acute damage to the retina.  A common manifestation of systemic diseases such as diabetes and high blood pressure.}
+}
+
+\newglossaryentry{formula}
+{
+        name=formula,
+        description={A mathematical expression}
+}
+ 
+\newacronym{amd}{AMD}{Age Related Macular Degeneration}
 
 \titleformat{\chapter}[display]
   {\normalfont\huge\bfseries}{}{0pt}{\huge}
@@ -73,6 +142,9 @@ Dr. William Hossack, Jano van Hemert.
 \tableofcontents % Write out the Table of Contents
 
 \clearpage % Start a new page
+\glsaddall
+
+\printnoidxglossaries
 
 %-------------------------------------------------------------------------------
 % CONTENT CHAPTERS
@@ -85,10 +157,10 @@ Dr. William Hossack, Jano van Hemert.
 \input{sections/oct}
 \input{sections/future_research}
 
+
 %-------------------------------------------------------------------------------
 % CONTENT - APPENDICES
 %-------------------------------------------------------------------------------
-
 \addtocontents{toc}{\vspace{2em}}
 
 %\appendix
@@ -97,7 +169,11 @@ Dr. William Hossack, Jano van Hemert.
 
 \addtocontents{toc}{\vspace{2em}}
 
+
+
 \backmatter
+
+
 
 %-------------------------------------------------------------------------------
 % BIBLIOGRAPHY
