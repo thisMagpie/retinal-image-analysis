@@ -32,12 +32,12 @@ water, the vessels of its retina can be seen from the outside.
 \cite{collegeoptometrists}
 
 Czech scientist Jan Purkinje observed the fundus of a dog and later a
-human eye with the use of his myopic spectacles.  Acting as a concave
-mirror, they reflected light into the eye from a candle situated behind the
-subject.  He also provided sketches of his own retinal vasculature, shown
-in \fref{fig:retinal_drawings}.  His research resulted in the realisation of the
-first principles of the opthalmoscope in 1823.  This was later reinvented
-by Charles Babbage in 1845.\cite{flick1947centenary,keeler1997150}
+human eye with the use of his myopic spectacles.\cite{purkinje2002purkinje}
+Acting as a concave mirror, they reflected light into the eye from a candle
+situated behind the subject.  He also provided sketches of his own retinal
+vasculature, shown in \fref{fig:retinal_drawings}.  His research resulted in
+the realisation of the first principles of the opthalmoscope in 1823.\cite{albert1973jan}
+This was later reinvented by Charles Babbage in 1845.\cite{flick1947centenary,keeler1997150}
 Babbage was also responsible for the original concept of a programmable
 computer, solidifying the link between retinal imaging and computing at an
 early stage.\cite{halacy1970charles}
@@ -125,7 +125,7 @@ facet that can cause confusion with localisation.
 The inspection and evaluation of the retina quickly became a routine exercise
 for ophthalmologists.  The first known image of the human retina, shown below
  in \fref{fig:human_retina} was published by the Dutch ophthalmologist van Trigt
-in 1853.  
+in 1853.\cite{kjerrumgaard1948retinitis,van1853dissertatio}  
 
 \begin{figure}[H]
 \centering
@@ -141,21 +141,23 @@ The first clear photographic images of the retina were obtained by German ophtha
 Gullstrand developed the fundus camera.\cite{gullstrandcamera}  He went on
 to receive the Nobel prize for his invention, and his concept has remained the
 primary method of retinal imaging to the present day because of how cost
-effective and safe it is to use.  
+effective and safe it is to use.\cite{ravin1999gullstrand}
 
 The next crucial development was the invention of fluorescein angiographic
-imaging, which was first used successfully in 1961.  A fluorescent dye is
-injected into the bloodstream and binds to the patient's leukocytes.
-\cite{novotny1961method}  A fundus camera with additional narrow band
- filters can then be used to capture the image, an example of which is shown
-in \fref{fig:fluore_angio_image}.  This method has led to a better understanding
-of the function of retinal circulation.  However, there are concerns over the
-safety of administering fluorescein, as it can cause adverse reactions such
-as nausea, vomiting, low blood pressure, and, in extreme cases, life-threatening
-anaphylaxis. These concerns have resulted in this method being slowly
-replaced by tomographic imaging, which utilises a penetrating wave to image
-by sectioning, for the diagnoses and treatments of eye diseases such as macular
-edema and macular degeneration. 
+imaging, which was first used successfully in 1961.\cite{novotny1961method}
+A fluorescent dye is injected into the bloodstream and binds to the patient's
+leukocytes.\cite{novotny1961method}  A fundus camera with additional
+narrow band filters can then be used to capture the image, an example of
+which is shown in \fref{fig:fluore_angio_image}. This method has led to a
+better understanding of the function of retinal circulation. However, there are
+concerns over the safety of administering fluorescein, as it can cause adverse
+reactions such as nausea, vomiting, low blood pressure and with an extreme
+allergic reaction, life-threatening anaphylaxis can occur.
+\cite{lopez1998fluorescein,kwan2006fluorescein} These concerns have resulted
+in this method being slowly replaced by tomographic imaging, which utilises
+a penetrating wave to image by sectioning, for the diagnoses and treatments
+of eye diseases such as \gls{dme} and
+\gls{amd}.
 
 \begin{figure}[H]
 \centering
@@ -165,19 +167,21 @@ edema and macular degeneration.
 \end{figure}
 
 Tomographic imaging of the retina has become common practice following
-the development of femtosecond \Gls{laser}s, \Gls{sld}s, and,
+the development of femtosecond \Gls{laser}s, \Gls{sld} technology, and,
 most significantly, the application of \Gls{oct}
 to retinal imaging.\cite{huang1991optical}  This technique uses light to capture
 3-D images from within optical scattering media at micrometer-resolution,
 allowing for true 3-D optical sectioning of the retina.\cite{van2007recent}
 
 As the prevalence of diseases such as diabetes increased, along with
-the medical demands of an aging population, there became a clear need
-for more efficient image analysis techniques to facilitate screening programmes.
+the medical demands of an aging population, an apparent need
+for more efficient image analysis techniques to facilitate screening
+programmes emerged.\cite{king1998global}
 
-Retinal image analysis methods were first examined by Matsui et al in 1973.
-Their approach was grounded in mathematical morphology, utilising digitized
-slides of fluorescein angiograms of the retina, with a primary focus on vessel segmentation.\cite{matsui1973study}  
+Retinal image analysis methods were first examined by Matsui et al
+in 1973.\cite{matsui1973study}  Their approach was grounded in
+mathematical morphology, utilising digitised slides of fluorescein
+angiograms of the retina, with a primary focus on vessel segmentation.
 
 Many attempts to segment other anatomical structures in the eye were
  made in the subsequent years, all based on the use of digitized slides.
@@ -247,7 +251,7 @@ where available light is proportional to aperture area, which is in
 turn related to the optical system is shown in \eref{eq:optical_system}
 
 \begin{equation}
-A = \pi({\frac{f}{2N}})^2
+A = \pi\left({\frac{f}{2N}}\right)^2
 \label{eq:optical_system}
 \end{equation}
 
@@ -287,3 +291,4 @@ whereas scattering from lens surfaces and opacities occur as the
 light rays penetrate the lens. This challenge is overcome in
 imaging devices and will be discussed in greater detail in the
 following section.
+
