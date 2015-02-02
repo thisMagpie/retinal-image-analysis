@@ -30,15 +30,15 @@ camera of an iPhone with an indirect ophthalmoscope to capture
 high-resolution images. With significant obstacles to retinal screening
 in developing countries, the existence of affordable and portable devices that are
 capable of retinal imaging are a great leap forward. With a total retail
-cost of \$883 (compared with tens of thousands) the financial obstacle
+cost of \£585 (compared with tens of thousands) the financial obstacle
 to widespread clinical adoption is avoided. \Fref{fig:ocular} illustrates
 the mechanical set-up of the Ocular CellScope, where the retina is
 illuminated by an LED flash that passes through the ophthalmic lens.
 This device images in the same manner as the fundus camera which was
-described in the previous section. The resulting retinal image is 55$^\circ$ field of
-view, with a resolution of 2652×2448 pixels. \cite{medscape}
+described in the previous section. The resulting retinal image has a 55$^\circ$ field of
+view and a resolution of $2652\times2448$ pixels. \cite{medscape}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics{figures/ocular}
 \caption{A schematic figure of the Ocular CellScope \cite{medscape} }
@@ -60,7 +60,7 @@ to those adopted in the developed world, there would be a vast improvement in th
 diagnosis of retinal diseases, which in the case of diabetic retinopathy can reduce the
 risk of blindness by 50\%. \cite{abramoff2010automated}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics{figures/ocularDR}
 \caption{A sample image of a patient with diabetic retinopathy using the Ocular CellScope \cite{medscape}}
@@ -77,7 +77,7 @@ personnel and then sent via mobile technology to a secure server, where ophthalm
 have examined the images and returned a diagnosis. 
 
 The development of automated early detection of diabetic retinopathy algorithms have
-been a significant area of research in recent years. Computer aided diagnosis (CAD)
+been a significant area of research in recent years. \Gls{cad}
 is seen by many eye-care professionals as the most efficient way in reducing the
 advancement of diabetic retinopathy and thus blindness in the developed and developing
 world. In 2011 a study was conducted to test the ability of one CAD system to detect
@@ -86,7 +86,7 @@ against the sensitivity of two specialist graders and was comparable in accuracy
 \cite{sanchez2011evaluation} \Fref{fig:autodr} is an example of a successful detection
 by the software, which would then be referred to a specialist for consideration.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics{figures/autodr}
 \caption{An image illustrating the ability of the algorithm to detect fatty fluid leaks
@@ -103,15 +103,15 @@ developing world is very real and imminent.
 
 \section{Blue light hazard}
 
-The prevalence of blue-light LEDs in modern technology has led many to consider the
-possible detrimental effects of over-exposure on the retinal tissue. The fast-growing
-use of LED devices and energy-efficient light bulbs, with a peak light-wavelength
-in the blue light region, can cause significantly increased oxidative stress on the
-retinal tissue.\cite{shang_wang} A chronic exposure to blue light can result in
-induced photochemical deterioration of the retina, which has the effect of accelerating
-the biological ageing process.\cite{behar_cohen_2011}.
+The prevalence of blue-light \Gls{led} in modern technology has led many to consider
+the possible detrimental effects of over-exposure on the retinal tissue. The
+fast-growing use of LED devices and energy-efficient light bulbs, with a peak
+light-wavelength in the blue light region, can cause significantly increased oxidative
+stress on the retinal tissue.\cite{shang_wang} A chronic exposure to blue light can
+result in induced photochemical deterioration of the retina, which has the effect of
+accelerating the biological ageing process.\cite{behar_cohen_2011}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics{figures/bluehazard}
 \caption{A sample image of a patient with diabetic retinopathy using the Ocular CellScope}
@@ -121,14 +121,14 @@ the biological ageing process.\cite{behar_cohen_2011}.
 
 Normal white light, as well as sunlight, contains a wide distribution of "all" colour
 wavelengths. \Fref{fig:bluehaz} shows how the wavelengths of a white-light LED and a
-traditional lightbulb are distributed. Light of different wavelength are either absorbed
+traditional light bulb are distributed. Light of different wavelength are either absorbed
 or transmitted by different sections of the eye. As a result, being exposed to natural
 sunlight means that the different sections of the eye are all used. By introducing a
 narrow range of light waves means that some parts of the eye will be used more than
 others. In the case of blue-intensive light waves, those are all absorbed by the retina
 alone, as can be seen in \fref{fig:wl}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics{figures/wavelength}
 \caption{A table showing how light of different wavelengths are handled inside the eye.}
@@ -155,7 +155,7 @@ images must be registered independently. This is achieved in practice by individ
 capturing each image over a very short period of time and then concatenating these
 descriptions to form one multimodal image, as shown in \fref{fig:mt}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics{figures/multitwo}
 \caption{Multimodal image of a patient with macular leakage. 1A is a colour fundus
@@ -178,7 +178,7 @@ image on top of the 2-D retinal scan image. This feature illustrates the structu
 defects beneath the image and is used to show how symptoms manifest differently in
 each modality, an example of this is shown in \fref{fig:multi}.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics{figures/multi}
 \caption{Combination of cSLO retinal image and OCT image in a patient suffering from
@@ -215,7 +215,7 @@ new area of research in pathology at a cellular level. \Fref{fig:ao} illustrates
 AO with a fundus camera.
 
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics{figures/ao}
 \caption{A comparison of standard resolution fundus images with the capabilities of high resolution adaptive optics imaging}
@@ -253,31 +253,35 @@ The pattern of the retina, which maps the locations of veins, arteries, the macu
 and the optic nerve in the eye, has a much more complex pattern than the normally
 used fingerprint or iris.\cite{ortega_2009}
 
-The retinal images are then analysed using complex computer algorithms, converted to
-computer code and then saved in a database. Presently one of the most commonly used
-algorithms for both saving and matching retinas is a version of the Scale Invariant
-Feature Transform (SIFT). \Fref{fig:sift} shows an image of the process, where the
-SIFT-algorithm is trying to match keypoints from from retinas. Simply put the SIFT
-algorithm takes key features from the image and saves a vector collection in a database.
-In the matching process an object is recognised by comparing the new vector set with
-the ones in the database. The matching is often computed very efficiently using a
-best-bin-first search algorithm, that begins with a keypoint and moves outward from that.
+The retinal images are then analysed using complex computer algorithms,
+converted to computer code and then saved in a database. Presently one
+of the most commonly used algorithms for both saving and matching retinas
+is a version of the \Gls{SIFT}. \Fref{fig:sift} shows an image of the process,
+where the SIFT-algorithm is trying to match keypoints from from retinas. Simply
+put the SIFT algorithm takes key features from the image and saves a vector
+collection in a database. In the matching process an object is recognised by
+comparing the new vector set with the ones in the database. The matching is
+often computed very efficiently using a best-bin-first search algorithm, that
+begins with a keypoint and moves outward from that.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics{figures/sift}
 \caption{An example of Scale Invariant Feature Transform in retina matching}
 \label{fig:sift}
 \end{figure}
 
-The retina contains at least as much individual data as a fingerprint.  However, unlike
-a fingerprint, it is an internal organ and is less susceptible to either intentional
-or unintentional modification. Where a thumb can be amputated and still be used in
-a scanner, the blood vessels mapping across the retina would contract so quickly
-that having someone?s "amputated" eye would not help in tricking a retinal recognition
-scanner. Normally the retina?s intricate network of blood vessels is a physiological
-characteristic that remains stable throughout the life of a person. However,
-certain eye-related medical conditions and diseases, such as cataracts and glaucoma,
-can render a person unable to use retina-scan technology, as the blood vessels can
-be obscured.\cite{rarr_2015}  In terms of consistency a retina scan has an error rate
-of 1 in 10,000,000, whereas the error of a fingerprint scan can be as high as 1 in 500.
+The retina contains at least as much individual data as a fingerprint. 
+However, unlike a fingerprint, it is an internal organ and is less susceptible
+to either intentional or unintentional modification. Where a thumb can be
+amputated and still be used in a scanner, the blood vessels mapping across
+the retina would contract so quickly that having someone?s "amputated" eye
+would not help in tricking a retinal recognition scanner. Normally the retina?s
+intricate network of blood vessels is a physiological characteristic that
+remains stable throughout the life of a person. However, certain eye-related
+medical conditions and diseases, such as cataracts and glaucoma, can render
+a person unable to use retina-scan technology, as the blood vessels can
+be obscured.\cite{rarr_2015}  In terms of consistency a retina scan has an
+error rate of 1 in 10,000,000, whereas the error of a fingerprint scan can be as
+high as 1 in 500.
+
