@@ -73,6 +73,9 @@
 }
  
 \newacronym{amd}{AMD}{Age Related Macular Degeneration}
+\newacronym{oct}{OCT}{Optical Coherence Tomography}
+\newacronym{oct}{OCT}{Optical Coherence Tomography}
+
 
 \titleformat{\chapter}[display]
   {\normalfont\huge\bfseries}{}{0pt}{\huge}
@@ -117,6 +120,18 @@
 
 \textsc{\Large{Abstract}}\\
 
+The purpose of this review is to introduce a complex optical system, 
+the human eye, and provide an extensive investigation into the technology 
+that underpins retinal imaging.  The retina is of primary interest as many 
+diseases manifest themselves in the retina. This paper has focused on 
+three main technologies used in retinal imaging research: fundus cameras, 
+cSLOs and \Gls{oct}. To introduce these technologies, a detailed 
+introduction to the eye and its dysfunction, pathology, and injury is provided 
+along with a comprehensive overview of the early origins of ophthalmoscopy 
+in the 19th century. The investigation is concluded with a discussion of the 
+future research, covering the most recent advancements in imaging 
+technology utilising adaptive optics and two-photon microscopy.  
+
 \end{center}
 
 \end{titlepage}
@@ -151,11 +166,13 @@ Dr. William Hossack, Jano van Hemert.
 %-------------------------------------------------------------------------------
 \mainmatter % Numeric (1,2,3...) page numbering
 \pagestyle{fancy}
+\input{sections/introduction}
 \input{sections/anatomy_of_the_eye}
 \input{sections/history}
 \input{sections/fundus_photography}
 \input{sections/oct}
 \input{sections/future_research}
+\input{sections/conclusion}
 
 
 %-------------------------------------------------------------------------------
