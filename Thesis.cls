@@ -175,7 +175,7 @@
 %	defined as \examname above so you cite it as \examname
 %-------------------------------------------------------------------------------
 
-\thesistitle{Retinal Imaging and Image Analysis}
+\thesistitle{Looking In Through The Eye}
 \supervisor{Dr. William Hossack \textsc{Blogs}}
 \degree{Physics, innit?}
 \authors{Magdalen}
